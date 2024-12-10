@@ -1,0 +1,42 @@
+.skills-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.skills-slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.skills-page {
+  flex: 0 0 100%; /* Each page takes full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  perspective: 1000px;
+}
+
+.logo-box {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo-container:hover .logo-box {
+  transform: scale(1.1) rotateY(10deg);
+}
+
+.logo-container:hover .animated-logo {
+  filter: brightness(1.2);
+}
+
+.animated-logo {
+  transition: transform 0.5s ease, filter 0.5s ease;
+  transform: translateZ(0);
+}

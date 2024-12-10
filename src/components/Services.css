@@ -1,0 +1,16 @@
+/* Slide-In Animation */
+@keyframes slideInFromBottom {
+    from {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideInFromBottom 2s ease-in-out forwards;
+  }
+  

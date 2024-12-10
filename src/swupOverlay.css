@@ -1,0 +1,23 @@
+/* Overlay Container */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a0025;
+  z-index: 1000;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Overlay Active (Covers the Content) */
+.overlay.is-active {
+  transform: translateY(0);
+}
+
+/* Overlay Exit (Uncovers the Content) */
+.overlay.is-exiting {
+  transform: translateY(100%);
+}
