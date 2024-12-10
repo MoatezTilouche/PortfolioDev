@@ -20,7 +20,7 @@ import springImage from "../assets/languagess/spring.png";
 import sqlImage from "../assets/languagess/sql.png";
 import pythonImage from "../assets/languagess/python.png";
 import javaImage from "../assets/languagess/java.png";
-import cImage from "../assets/languagess/c.png";
+import cImage from "../assets/languagess/C.png";
 
 function Skills() {
   const allSkills = [
