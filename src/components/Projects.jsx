@@ -1,48 +1,57 @@
 import React from "react";
 import "./Projects.css"; // Import the custom CSS file
+// Import assets directly
+import especeImg from "../assets/espece.png";
+import vistoImg from "../assets/visto.png";
+import smokingImg from "../assets/smoking.png";
+import cookiesImg from "../assets/cookies.png";
+import oceanImg from "../assets/ocean.png";
+import continuousImg from "../assets/continuous.png";
+import githubIcon from "../assets/github.png";
+import webIcon from "../assets/web.png";
 
 export default function Projects() {
   const projects = [
     {
       name: "Rare Species",
       description: "Discover and protect rare species and locations.",
-      imgSrc: "src/assets/espece.png",
-      iconSrc: "src/assets/github.png", // Path to your custom GitHub icon
+      imgSrc: especeImg,
+      iconSrc: githubIcon,
       githubLink: "https://github.com/MoatezTilouche",
     },
     {
       name: "Leave Management",
       description: "Manage employee leave requests with ease.",
-      imgSrc: "src/assets/visto.png",
-      iconSrc: "src/assets/github.png",
+      imgSrc: vistoImg,
+      iconSrc: githubIcon,
       githubLink: "https://github.com/MoatezTilouche/leave-management-App-Web",
     },
     {
       name: "Breath Air App",
-      description: "Build an application to help user stop smoking.",
-      imgSrc: "src/assets/smoking.png",
-      iconSrc: "src/assets/github.png",
+      description: "Build an application to help users stop smoking.",
+      imgSrc: smokingImg,
+      iconSrc: githubIcon,
       githubLink: "https://github.com/MoatezTilouche",
     },
     {
       name: "Cookies Cauchemar",
-      description: "Build a website that makes the user nervous handling the cookies.",
-      imgSrc: "src/assets/cookies.png",
-      iconSrc: "src/assets/web.png", // Path to your custom Website icon
+      description: "Build a website that makes the user nervous handling cookies.",
+      imgSrc: cookiesImg,
+      iconSrc: webIcon,
       websiteLink: "https://cookies-challenge.vercel.app/simpage",
     },
     {
       name: "Race For Water",
-      description: "Explore the similarities between humans and ocean.",
-      imgSrc: "src/assets/ocean.png",
-      iconSrc: "src/assets/web.png",
+      description: "Explore the similarities between humans and the ocean.",
+      imgSrc: oceanImg,
+      iconSrc: webIcon,
       websiteLink: "https://night-challenge.vercel.app/home",
     },
     {
       name: "Continuous Net",
       description: "Efficiently manage and organize car data.",
-      imgSrc: "src/assets/continuous.png",
-      iconSrc: "src/assets/github.png",
+      imgSrc: continuousImg,
+      iconSrc: githubIcon,
       githubLink: "https://github.com/MoatezTilouche",
     },
   ];

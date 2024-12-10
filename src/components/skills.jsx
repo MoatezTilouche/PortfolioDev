@@ -7,27 +7,42 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "./skills.css"; // Updated CSS
 
+
+// Import images
+import htmlCssImage from "../assets/languagess/html_css.png";
+import jsImage from "../assets/languagess/js.png";
+import tsImage from "../assets/languagess/ts.png";
+import angularImage from "../assets/languagess/angular.png";
+import reactImage from "../assets/languagess/reactjs.png";
+import flutterImage from "../assets/languagess/flutter.png";
+import nestImage from "../assets/languagess/nestjs.png";
+import springImage from "../assets/languagess/spring.png";
+import sqlImage from "../assets/languagess/sql.png";
+import pythonImage from "../assets/languagess/python.png";
+import javaImage from "../assets/languagess/java.png";
+import cImage from "../assets/languagess/c.png";
+
 function Skills() {
   const allSkills = [
     [
-      { title: "HTML & CSS", description: "Build responsive layouts using HTML & CSS.", image: "src/assets/languagess/html_css.png" },
-      { title: "JavaScript", description: "Develop interactive applications using JavaScript.", image: "src/assets/languagess/js.png" },
-      { title: "TypeScript", description: "Enhance JavaScript applications with TypeScript for better type safety.", image: "src/assets/languagess/ts.png" },
+      { title: "HTML & CSS", description: "Build responsive layouts using HTML & CSS.", image: htmlCssImage },
+      { title: "JavaScript", description: "Develop interactive applications using JavaScript.", image: jsImage },
+      { title: "TypeScript", description: "Enhance JavaScript applications with TypeScript for better type safety.", image: tsImage },
     ],
     [
-      { title: "Angular", description: "Create robust frontend applications with Angular.", image: "src/assets/languagess/angular.png" },
-      { title: "React JS", description: "Build powerful user interfaces with React JS.", image: "src/assets/languagess/reactjs.png" },
-      { title: "Flutter", description: "Develop cross-platform mobile apps using Flutter.", image: "src/assets/languagess/flutter.png" },
+      { title: "Angular", description: "Create robust frontend applications with Angular.", image: angularImage },
+      { title: "React JS", description: "Build powerful user interfaces with React JS.", image: reactImage },
+      { title: "Flutter", description: "Develop cross-platform mobile apps using Flutter.", image: flutterImage },
     ],
     [
-      { title: "Nest JS", description: "Efficient server-side applications with Nest JS.", image: "src/assets/languagess/nestjs.png" },
-      { title: "Spring Boot", description: "Create backend applications with Spring Boot.", image: "src/assets/languagess/spring.png" },
-      { title: "SQL", description: "Manage and query relational databases.", image: "src/assets/languagess/sql.png" },
+      { title: "Nest JS", description: "Efficient server-side applications with Nest JS.", image: nestImage },
+      { title: "Spring Boot", description: "Create backend applications with Spring Boot.", image: springImage },
+      { title: "SQL", description: "Manage and query relational databases.", image: sqlImage },
     ],
     [
-      { title: "Python", description: "Solve complex problems with Python.", image: "src/assets/languagess/python.png" },
-      { title: "Java", description: "Develop robust applications with Java.", image: "src/assets/languagess/java.png" },
-      { title: "C", description: "Create low-level and efficient programs with C.", image: "src/assets/languagess/c.png" },
+      { title: "Python", description: "Solve complex problems with Python.", image: pythonImage },
+      { title: "Java", description: "Develop robust applications with Java.", image: javaImage },
+      { title: "C", description: "Create low-level and efficient programs with C.", image: cImage },
     ],
   ];
 
