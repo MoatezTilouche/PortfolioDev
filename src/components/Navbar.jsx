@@ -14,7 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ComputerIcon from "@mui/icons-material/Computer";
 import profilePic from "../assets/picme.jpeg"; // Adjust the path for your avatar image
-
+import CvMoatez from "../assets/Moatez Tilouche CV (1).pdf"
 const pages = [
   { label: "Home", path: "/" },
   { label: "Skills", path: "/skills" },
@@ -25,7 +25,7 @@ const pages = [
 const settings = [
   { label: "LinkedIn", link: "https://www.linkedin.com/in/moatez-tilouch-a58a96284/" },
   { label: "Instagram", link: "https://www.instagram.com/moatez_tilouche/" },
-  { label: "Download CV", link: "src/assets/Moatez Tilouche CV (1).pdf", download: true },
+  { label: "Download CV", link: CvMoatez, download: true },
 ];
 
 function ResponsiveAppBar() {
