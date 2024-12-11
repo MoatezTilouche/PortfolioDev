@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moatez Tilouche</title>
-    <link rel="stylesheet" href="/src/styles.css" />
-    <!-- Add your favicon and meta tags -->
+    
+    <!-- Include the main stylesheet -->
+    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="icon" href="/LOGO.png" />
+        
   </head>
   <body class="bg-azure antialiased">
+    <!-- React app root -->
     <div id="root"></div>
 
-    <!-- Script for the React app -->
+    <!-- Vite will inject the necessary scripts for the React app -->
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Correctly include Flowbite script -->
-    <script src="/flowbite.min.js" type="module"></script>
+    <script type="module" src="/node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
