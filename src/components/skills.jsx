@@ -50,10 +50,11 @@ function Skills() {
 
   const handleNext = () => {
     setCurrentPage((prev) => (prev + 1) % allSkills.length);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top
   };
-
   const handlePrev = () => {
     setCurrentPage((prev) => (prev - 1 + allSkills.length) % allSkills.length);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top
   };
 
   return (

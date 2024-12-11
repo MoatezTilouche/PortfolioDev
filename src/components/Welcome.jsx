@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import photoMe from "../assets/photome.jpeg"; // Correctly import the image
-import "./Welcome.css"; // Import CSS for styling
+import photoMe from "../assets/photome.jpeg"; 
+import "./Welcome.css"; 
 
 function Welcome() {
   const [showText, setShowText] = useState(false);
