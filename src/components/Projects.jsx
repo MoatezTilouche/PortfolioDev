@@ -31,7 +31,7 @@ export default function Projects() {
       description: "Build an application to help users stop smoking.",
       imgSrc: smokingImg,
       iconSrc: githubIcon,
-      githubLink: "https://github.com/MoatezTilouche",
+      githubLink: "https://github.com/MoatezTilouche/breathair_app",
     },
     {
       name: "Cookies Cauchemar",
