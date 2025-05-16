@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import { IconButton, Grid, Card, CardContent, CardMedia, Skeleton } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import "./skills.css";
+import "./Skills.css";
 
 function ImageWithFallback({ src, alt, ...props }) {
   const [error, setError] = useState(false);
