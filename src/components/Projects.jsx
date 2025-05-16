@@ -1,57 +1,48 @@
 import React from "react";
 import "./Projects.css"; // Import the custom CSS file
-// Import assets directly
-import especeImg from "../assets/espece.png";
-import vistoImg from "../assets/visto.png";
-import smokingImg from "../assets/smoking.png";
-import cookiesImg from "../assets/cookies.png";
-import oceanImg from "../assets/ocean.png";
-import continuousImg from "../assets/continuous.png";
-import githubIcon from "../assets/github.png";
-import webIcon from "../assets/web.png";
 
 export default function Projects() {
   const projects = [
     {
       name: "Rare Species",
       description: "Discover and protect rare species and locations.",
-      imgSrc: especeImg,
-      iconSrc: githubIcon,
+      imgSrc: "src/assets/espece.png",
+      iconSrc: "src/assets/github.png", // Path to your custom GitHub icon
       githubLink: "https://github.com/MoatezTilouche",
     },
     {
       name: "Leave Management",
       description: "Manage employee leave requests with ease.",
-      imgSrc: vistoImg,
-      iconSrc: githubIcon,
+      imgSrc: "src/assets/visto.png",
+      iconSrc: "src/assets/github.png",
       githubLink: "https://github.com/MoatezTilouche/leave-management-App-Web",
     },
     {
       name: "Breath Air App",
-      description: "Build an application to help users stop smoking.",
-      imgSrc: smokingImg,
-      iconSrc: githubIcon,
-      githubLink: "https://github.com/MoatezTilouche/breathair_app",
+      description: "Build an application to help user stop smoking.",
+      imgSrc: "src/assets/smoking.png",
+      iconSrc: "src/assets/github.png",
+      githubLink: "https://github.com/MoatezTilouche",
     },
     {
       name: "Cookies Cauchemar",
-      description: "Build a website that makes the user nervous handling cookies.",
-      imgSrc: cookiesImg,
-      iconSrc: webIcon,
+      description: "Build a website that makes the user nervous handling the cookies.",
+      imgSrc: "src/assets/cookies.png",
+      iconSrc: "src/assets/web.png", // Path to your custom Website icon
       websiteLink: "https://cookies-challenge.vercel.app/simpage",
     },
     {
       name: "Race For Water",
-      description: "Explore the similarities between humans and the ocean.",
-      imgSrc: oceanImg,
-      iconSrc: webIcon,
+      description: "Explore the similarities between humans and ocean.",
+      imgSrc: "src/assets/ocean.png",
+      iconSrc: "src/assets/web.png",
       websiteLink: "https://night-challenge.vercel.app/home",
     },
     {
       name: "Continuous Net",
       description: "Efficiently manage and organize car data.",
-      imgSrc: continuousImg,
-      iconSrc: githubIcon,
+      imgSrc: "src/assets/continuous.png",
+      iconSrc: "src/assets/github.png",
       githubLink: "https://github.com/MoatezTilouche",
     },
   ];

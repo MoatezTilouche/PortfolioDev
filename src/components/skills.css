@@ -18,6 +18,7 @@
 
 .logo-container {
   perspective: 1000px;
+  will-change: transform;
 }
 
 .logo-box {
@@ -29,14 +30,34 @@
 }
 
 .logo-container:hover .logo-box {
-  transform: scale(1.1) rotateY(10deg);
+  transform: scale(1.05) rotateY(5deg);
 }
 
 .logo-container:hover .animated-logo {
-  filter: brightness(1.2);
+  filter: brightness(1.1) contrast(1.05);
 }
 
 .animated-logo {
-  transition: transform 0.5s ease, filter 0.5s ease;
+  transition: all 0.5s ease;
   transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  will-change: transform, filter;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-logo {
+  animation: fadeIn 0.5s ease-out;
 }

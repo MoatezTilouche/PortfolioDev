@@ -14,7 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ComputerIcon from "@mui/icons-material/Computer";
 import profilePic from "../assets/picme.jpeg"; // Adjust the path for your avatar image
-import CvMoatez from "../assets/Moatez Tilouche CV (1).pdf"
+
 const pages = [
   { label: "Home", path: "/" },
   { label: "Skills", path: "/skills" },
@@ -25,7 +25,7 @@ const pages = [
 const settings = [
   { label: "LinkedIn", link: "https://www.linkedin.com/in/moatez-tilouch-a58a96284/" },
   { label: "Instagram", link: "https://www.instagram.com/moatez_tilouche/" },
-  { label: "Download CV", link: CvMoatez, download: true },
+  { label: "Download CV", link: "src/assets/Moatez Tilouche CV (1).pdf", download: true },
 ];
 
 function ResponsiveAppBar() {
@@ -62,11 +62,12 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "'Fira Code', monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: "1.1rem",
             }}
           >
             Moatez Tilouche
@@ -123,11 +124,12 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
+              fontFamily: "'Fira Code', monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: "1rem",
             }}
           >
             Moatez Tilouche

@@ -7,9 +7,4 @@ export default defineConfig({
   optimizeDeps: {
     include: ['flowbite'], // Ensures flowbite is bundled
   },
-  build: {
-    rollupOptions: {
-      input: './index.html', // Ensure correct input file
-    },
-  },
 });

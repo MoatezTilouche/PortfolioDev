@@ -11,14 +11,11 @@ import Footer from "./components/Footer";
 import "./App.css";
 import "./index.css";
 import Skills from "./components/skills";
-import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       {/* Navbar is always visible */}
-      <ScrollToTop />
-
       <ResponsiveAppBar />
 
       {/* Define routes for each section */}
