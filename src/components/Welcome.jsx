@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import photoMe from '../assets/photome.jpeg'; // Correctly import the image
+import photoMe from '../assets/me.png'; // Updated import path
 import './Welcome.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt, faLightbulb, faPlug } from '@fortawesome/free-solid-svg-icons';
@@ -29,12 +29,12 @@ function Welcome() {
     },
     textContainer: {
       color: 'white',
-      maxWidth: '600px',
+      maxWidth: '700px',
       padding: '20px',
       flex: '1 1 50%',
     },
     animatedText: {
-      fontSize: window.innerWidth >= 1024 ? '1.2em' : '1em',
+      fontSize: window.innerWidth >= 1024 ? '1.8em' : '1em',
       fontWeight: '400',
       lineHeight: '1.6',
       fontFamily: "'Fira Code', monospace",
@@ -46,17 +46,14 @@ function Welcome() {
       alignItems: 'center',
     },
     image: {
-      width: '70%',
-      maxWidth: '400px',
+      width: window.innerWidth >= 1024 ? '80%' : '90%', // Increased size
+      maxWidth: '600px', // Increased max-width
       height: 'auto',
-      borderRadius: '20px',
       objectFit: 'cover',
-      border: '3px solid white',
-      boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
       opacity: showImage ? 1 : 0,
       transform: showImage ? 'scale(1)' : 'scale(0.9)',
       transition: 'opacity 2s ease-in-out, transform 2s ease-in-out',
-      aspectRatio: '4/3',
+      aspectRatio: '1/1', // Square aspect ratio for better appearance
     },
   };
 
